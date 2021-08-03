@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1048156034052",
+    "project_id": "sawii-9a29c",
+    "storage_bucket": "sawii-9a29c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048156034052:android:07a4e9330556ec46055151",
+        "android_client_info": {
+          "package_name": "com.example.sawii"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048156034052-n43juur46q25eieq6v0gt1h306ijig54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sawii",
+            "certificate_hash": "653f78f6176e745b8ffda5b4eaad3dbe4a2061d5"
+          }
+        },
+        {
+          "client_id": "1048156034052-fu3il55aqjm9snsnpt0lkg5tl7ctbked.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvRJXZEi95CFfqB0aQGx9cFmktlENjhMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048156034052-fu3il55aqjm9snsnpt0lkg5tl7ctbked.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

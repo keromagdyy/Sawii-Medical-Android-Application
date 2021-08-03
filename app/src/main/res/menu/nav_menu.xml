@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="@color/dark_blue2"
+        app:cnb_textColor="@color/black"
+        />
+    <item
+        android:id="@+id/chat"
+        android:title="Chat"
+        android:icon="@drawable/chat"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="#673AB7"
+        app:cnb_textColor="@color/black"
+        />
+    <item
+        android:id="@+id/notification"
+        android:title="Notification"
+        android:icon="@drawable/notification"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="#FFC107"
+        app:cnb_textColor="@color/black"
+        />
+    <item
+        android:id="@+id/advice"
+        android:title="Advice"
+        android:icon="@drawable/advice"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="#FF5722"
+        app:cnb_textColor="@color/black"
+        />
+    <item
+        android:id="@+id/favovite"
+        android:title="Favovite"
+        android:icon="@drawable/favorite"
+        app:cnb_backgroundColor="@color/white"
+        app:cnb_iconColor="#f00"
+        app:cnb_textColor="@color/black"
+        />
+</menu>

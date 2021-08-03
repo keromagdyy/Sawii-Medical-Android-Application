@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profileDoctorDoctor"
+    android:background="@color/blue3">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/watermarkdark"
+            android:scaleType="centerCrop"
+            ></ImageView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardElevation="15dp"
+            app:cardCornerRadius="25dp"
+            android:backgroundTint="@color/smoth_blue"
+            >
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="75dp"
+                    android:orientation="vertical"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/txtUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Dr. Yasser Adel"
+                        android:textColor="@color/blue1"
+                        android:textSize="22sp"
+                        android:textStyle="bold"></TextView>
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:isIndicator="true"
+                        android:saveEnabled="true"
+                        android:rating="4"
+                        android:theme="@style/RatingBar"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="50 rev | from 150 view"
+                        android:textSize="15sp"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="800+ sessions"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        ></TextView>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/txtPrice"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="250 L.E / session"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:textStyle="bold"></TextView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:layout_gravity="end"
+                            android:orientation="horizontal"
+                            >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/edit"></ImageView>
+
+                        <TextView
+                            android:id="@+id/edit_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:linksClickable="true"
+                            android:text="Edit"
+                            android:textColor="#f00"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></TextView>
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+
+                    <Button
+                        android:id="@+id/btn_booking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:layout_gravity="center"
+                        android:text="Booking"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:backgroundTint="@null"
+                        android:background="@drawable/btn_orange"
+                        ></Button>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/key_doctor_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/card_category"
+                            >
+
+                            <TextView
+                                android:id="@+id/minus1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="-"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                ></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="Doctor Info"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                ></TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_doctor_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="20dp"
+                                android:paddingBottom="5dp">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_toStartOf="@+id/edit_name"
+                                    android:src="@drawable/edit"></ImageView>
+
+                                <TextView
+                                    android:id="@+id/txtBio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/description"
+                                    android:text="Specialist in psychology and sociology, and holds a master's degree in obsessive-compulsive disorder"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"></TextView>
+
+
+                                <TextView
+                                    android:id="@+id/description"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Description :"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"></TextView>
+
+
+                                <TextView
+                                    android:id="@+id/edit_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:linksClickable="true"
+                                    android:text="Edit"
+                                    android:textColor="#f00"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"></TextView>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="20dp"
+                                android:paddingBottom="5dp">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_toStartOf="@+id/edit_phone_number"
+                                    android:src="@drawable/edit"></ImageView>
+
+                                <TextView
+                                    android:id="@+id/txtCity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/country_of_residence"
+                                    android:text="Egypt"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"></TextView>
+
+
+                                <TextView
+                                    android:id="@+id/country_of_residence"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Country of Residence :"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"></TextView>
+
+
+                                <TextView
+                                    android:id="@+id/edit_phone_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:linksClickable="true"
+                                    android:text="Edit"
+                                    android:textColor="#f00"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"></TextView>
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="20dp"
+                                android:paddingBottom="5dp">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_toStartOf="@+id/edit_mail"
+                                    android:src="@drawable/edit"></ImageView>
+
+                                <TextView
+                                    android:id="@+id/txtSpec"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/specialties"
+                                    android:text="Adolescence disorders
+                            \nDepression
+                            \nAnxiety disorders and obsessions
+                            \nMarriage Counselling/Relationship Disorders
+                            \nPsychotic disorders"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"></TextView>
+
+
+                                <TextView
+                                    android:id="@+id/specialties"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Specialties :"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"></TextView>
+
+
+                                <TextView
+                                    android:id="@+id/edit_mail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:linksClickable="true"
+                                    android:text="Edit"
+                                    android:textColor="#f00"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"></TextView>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="20dp"
+                                android:paddingBottom="5dp">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_toStartOf="@+id/edit_gender"
+                                    android:src="@drawable/edit"></ImageView>
+
+                                <TextView
+                                    android:id="@+id/txtYOE"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/year_of_experience"
+                                    android:text="10 Years"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"></TextView>
+
+
+                                <TextView
+                                    android:id="@+id/year_of_experience"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Year of Experience :"
+                                    android:textColor="@color/black"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"></TextView>
+
+
+                                <TextView
+                                    android:id="@+id/edit_gender"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:linksClickable="true"
+                                    android:text="Edit"
+                                    android:textColor="#f00"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"></TextView>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/key_reviews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/card_category"
+                            >
+
+                            <TextView
+                                android:id="@+id/minus2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="-"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                ></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="Reviews"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                ></TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_reviews"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:padding="5dp"
+                                android:background="@drawable/layout_review"
+                                >
+
+                                <TextView
+                                    android:id="@+id/txtcomment1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="15dp"
+                                    android:text="دكتور رائع جدا ارتاحت جدا فى التعامل معاه"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    ></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_below="@+id/txtcomment1"
+                                    android:layout_marginEnd="15dp"
+                                    android:text="Mohamed"
+                                    android:textStyle="bold"
+                                    android:textColor="#f00"
+                                    ></TextView>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:padding="5dp"
+                                android:background="@drawable/layout_review"
+                                >
+
+                                <TextView
+                                    android:id="@+id/txtcomment2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="15dp"
+                                    android:text="دكتور منتاز♥"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    ></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_below="@+id/txtcomment2"
+                                    android:layout_marginEnd="15dp"
+                                    android:text="user"
+                                    android:textStyle="bold"
+                                    android:textColor="#f00"
+                                    ></TextView>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:padding="5dp"
+                                android:background="@drawable/layout_review"
+                                >
+
+                                <TextView
+                                    android:id="@+id/txtcomment3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginEnd="15dp"
+                                    android:text="اليوم كانت الجلسة العاشرة مع دكتور ياسر و مازال بيعلمني شي جديد كل مره و يخليني اتعرف على نفسي و افهمها بشكل افضل. من افضل القرارات اللي اتخذتها هو اختيار دكتور ياسر ليكون المعالج الخاص بي. "
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    ></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_below="@+id/txtcomment3"
+                                    android:layout_marginEnd="15dp"
+                                    android:text="Alaa"
+                                    android:textStyle="bold"
+                                    android:textColor="#f00"
+                                    ></TextView>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/smoth_blue"
+            app:cardCornerRadius="250dp"
+            app:cardElevation="15dp">
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/smoth_blue"
+            app:cardCornerRadius="250dp"
+            app:cardElevation="15dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/profile_doctor"></ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>

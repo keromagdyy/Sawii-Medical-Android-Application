@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Prescription"
+    android:orientation="vertical"
+    android:background="@color/smoth_blue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Prescription for patient"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        ></TextView>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/txt_comment"
+        android:hint="Write your Prescriptions..."
+        ></EditText>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_gravity="center"
+        android:text="Ok"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        android:background="@drawable/btn_orange"
+        ></Button>
+
+    <Button
+        android:id="@+id/btn_support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_gravity="center"
+        android:text="support"
+        android:textSize="18dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/btn_blue"
+        ></Button>
+
+</LinearLayout>

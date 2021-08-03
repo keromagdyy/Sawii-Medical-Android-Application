@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Signup"
+    android:background="@drawable/fragment_signinup">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                >
+
+                <LinearLayout
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="300dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_horizontal"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxStrokeColor="@color/dark_orange"
+                        android:textColorHint="@color/dark_blue2"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_fname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="First Name"
+                            ></com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="300dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_horizontal"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxStrokeColor="@color/dark_orange"
+                        android:textColorHint="@color/dark_blue2"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_lname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Last Name"
+                            android:inputType="text"
+                            ></com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="300dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_horizontal"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxStrokeColor="@color/dark_orange"
+                        android:textColorHint="@color/dark_blue2"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="E-Mail"
+                            android:inputType="textEmailAddress"
+                            ></com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="300dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_horizontal"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxStrokeColor="@color/dark_orange"
+                        android:textColorHint="@color/dark_blue2"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            ></com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="300dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_horizontal"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxStrokeColor="@color/dark_orange"
+                        android:textColorHint="@color/dark_blue2"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_cpassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Confirm Password"
+                            android:inputType="textPassword"
+                            ></com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/txt_gender"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="300dp"
+                        android:layout_height="55dp"
+                        android:entries="@array/arr_gender"
+                        android:scrollbars="none"
+                        android:background="@drawable/layout_upload_file"
+                        android:textColor="@color/dark_blue2"
+                        >
+                    </androidx.appcompat.widget.AppCompatSpinner>
+
+
+                    <CheckBox
+                        android:id="@+id/chDoctor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="I'm a Doctor"
+                        android:textSize="18dp"
+                        ></CheckBox>
+
+                    <TextView
+                        android:id="@+id/txtEnterCert"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Your Certificate"
+                        android:visibility="gone"
+                        ></TextView>
+
+                    <LinearLayout
+                        android:id="@+id/layoutUpload"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/layout_upload_file"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        >
+
+                        <Button
+                            android:id="@+id/btnUploadFile"
+                            android:layout_margin="5dp"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            app:backgroundTint="@null"
+                            android:background="@color/blue2"
+                            android:text="upload file"
+                            ></Button>
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:text="No files chosen"
+                            ></TextView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="sign up"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="end"
+                app:backgroundTint="@null"
+                android:background="@drawable/btn_login"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

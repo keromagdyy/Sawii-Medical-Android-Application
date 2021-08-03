@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/txtUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Dr. Yasser Adel"
+            android:textColor="@color/blue1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/txtBio"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_below="@+id/txtUsername"
+            android:layout_margin="10dp"
+            android:text="Specialized in: Separation Anxiety Disorder, Generalized Anxiety Disorder, a..."
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/txtBio"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="250 L.E"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            ></TextView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

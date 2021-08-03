@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    app:cardElevation="20sp"
+    app:cardCornerRadius="18dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/card_post"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                app:cardCornerRadius="250dp"
+
+                >
+            <ImageView
+                android:id="@+id/profilePic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/jj"
+                android:scaleType="centerCrop"
+                >
+            </ImageView>
+                </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/cardimg"
+                android:text="User Name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/txtUserName"
+                android:text="|"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="23dp"
+                android:layout_toEndOf="@+id/v"
+                android:text="12:00 AM"
+                android:textColor="@color/black"
+                android:textSize="11sp"></TextView>
+
+            <ImageView
+                android:id="@+id/imgSetting"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/more"></ImageView>
+
+            <ImageView
+                android:id="@+id/imgFav"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                android:layout_toStartOf="@+id/imgSetting"
+                android:src="@drawable/heart"></ImageView>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txtPostContant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="اننى اعانى من اضطرابات والوسواس القهرى وتلاحقنى افكار الانتحار لكنى اجد فى كل مرة من ينقذنى"
+            ></TextView>
+
+        <Button
+            android:id="@+id/btnReply"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/btn_reply"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="Reply"></Button>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

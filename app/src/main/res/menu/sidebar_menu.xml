@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/user_icon"
+        ></item>
+
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings_icon"
+        ></item>
+
+    <item android:id="@+id/supports"
+        android:title="Supports"
+        android:icon="@drawable/supports"
+        ></item>
+
+    <item android:id="@+id/exit"
+        android:title="Log out"
+        android:icon="@drawable/exit"
+        android:iconTint="@null"
+
+        ></item>
+
+</menu>

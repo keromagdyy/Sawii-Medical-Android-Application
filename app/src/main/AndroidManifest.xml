@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sawii">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.webkit.PermissionRequest" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sawii"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ChatBot"></activity>
+        <activity android:name=".MessageActivity" android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".AddPost"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".docProfile"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".infoScreen"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity android:name=".Prescription" />
+        <activity android:name=".rate" />
+        <activity
+            android:name=".call"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".sessions"
+            android:parentActivityName=".Navigation" />
+        <activity
+            android:name=".profileDoctorDoctor"
+            android:parentActivityName=".Navigation" />
+        <activity
+            android:name=".profileDoctor"
+            android:parentActivityName=".booking" />
+        <activity
+            android:name=".profilePatient"
+            android:parentActivityName=".Navigation" />
+        <activity
+            android:name=".FinalBookDoctor"
+            android:parentActivityName=".Navigation" />
+        <activity
+            android:name=".Settings"
+            android:parentActivityName=".Navigation" />
+        <activity
+            android:name=".Support"
+            android:parentActivityName=".Navigation"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".InsideChat"
+            android:parentActivityName=".Navigation"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".finalBook"
+            android:parentActivityName=".booking" />
+        <activity
+            android:name=".booking"
+            android:parentActivityName=".Navigation" />
+        <activity
+            android:name=".comment"
+            android:parentActivityName=".Navigation" />
+        <activity android:name=".Navigation" />
+        <activity
+            android:name=".ForgetPassword"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".Login"
+            android:label="login"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

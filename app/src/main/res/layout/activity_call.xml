@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".call">
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hardwareAccelerated="true"></WebView>
+
+
+
+
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/img_him"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:src="@drawable/photo_doctor"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        ></ImageView>-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:src="@drawable/shadow_call"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        ></ImageView>-->
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="160dp"-->
+<!--        android:layout_gravity="end"-->
+<!--        android:layout_margin="20dp"-->
+
+<!--        >-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            app:cardCornerRadius="18dp"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:id="@+id/img_self"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:src="@drawable/photo_call2"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                ></ImageView>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_gravity="center|bottom"-->
+<!--            android:foregroundGravity="center"-->
+<!--            app:backgroundTint="@color/blue2"-->
+<!--            app:tint="@color/white"-->
+<!--            android:src="@drawable/reverse_call"-->
+<!--            app:fabCustomSize="40dp"-->
+<!--            ></com.google.android.material.floatingactionbutton.FloatingActionButton>-->
+
+<!--    </FrameLayout>-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:foregroundGravity="center"
+        app:backgroundTint="@color/gray2"
+        app:tint="@color/white"
+        android:src="@drawable/arrow"
+        app:fabCustomSize="50dp"
+        ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_call"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="bottom|center"
+        android:foregroundGravity="center"
+        app:backgroundTint="#f00"
+        app:tint="@color/white"
+        android:src="@drawable/phone_call"
+        app:maxImageSize="30dp"
+        app:fabCustomSize="80dp"
+        ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_video"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="50dp"
+        android:layout_gravity="bottom|end"
+        android:foregroundGravity="center"
+        app:backgroundTint="@color/dark_gray"
+        app:tint="@color/white"
+        android:src="@drawable/video_call"
+        app:maxImageSize="30dp"
+        app:fabCustomSize="65dp"
+        ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_mic"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_gravity="bottom|start"
+        android:foregroundGravity="center"
+        app:backgroundTint="@color/dark_gray"
+        app:tint="@color/white"
+        android:src="@drawable/mic"
+        app:maxImageSize="30dp"
+        app:fabCustomSize="65dp"
+        ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</FrameLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".docProfile"
+    android:background="@color/blue4">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Pleaseو Enter your data that will appear to the patient."
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textStyle="bold"></TextView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                >
+
+                <LinearLayout
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/img_profileDoc"
+                        android:layout_margin="10dp"
+                        android:layout_width="220dp"
+                        android:layout_height="220dp"
+                        android:src="@drawable/profile_doctor"
+                        app:civ_border_width="4dp"
+                        app:civ_border_color="#2196F3"
+                        android:layout_gravity="center"/>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="300dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_horizontal"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxStrokeColor="@color/dark_orange"
+                        android:textColorHint="@color/dark_blue2"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="number"
+                            android:hint="Price"></com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxStrokeColor="@color/dark_orange"
+                        android:textColorHint="@color/dark_blue2"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_bio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Bio"
+                            android:inputType="textMultiLine"
+                            ></com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/txt_city"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="300dp"
+                        android:layout_height="55dp"
+                        android:entries="@array/arr_country"
+                        android:scrollbars="none"
+                        android:background="@drawable/layout_upload_file"
+                        android:textColor="@color/dark_blue2"
+                        >
+                    </androidx.appcompat.widget.AppCompatSpinner>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxStrokeColor="@color/dark_orange"
+                        android:textColorHint="@color/dark_blue2"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_Spec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Specialties"
+                            android:inputType="textMultiLine"
+                            ></com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="300dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_horizontal"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxStrokeColor="@color/dark_orange"
+                        android:textColorHint="@color/dark_blue2"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_year_ex"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Year of experience"
+                            android:inputType="number"
+                            ></com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btn_upload_prof_pic"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:backgroundTint="@null"
+                        android:background="@color/blue2"
+                        android:layout_gravity="center"
+                        android:text="upload Profile Picture"
+                        ></Button>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_complate_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complate Register"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="end"
+                app:backgroundTint="@null"
+                android:background="@drawable/btn_login"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
